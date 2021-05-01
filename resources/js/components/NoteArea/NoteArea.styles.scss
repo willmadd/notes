@@ -1,0 +1,94 @@
+@import "../../../sass/variables.scss";
+
+.notes {
+    margin: 41px 0;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(236px, 700px));
+    grid-gap: 20px;
+    @include breakpoint('tablet'){
+        grid-template-columns: repeat(2, minmax(236px, 400px));
+    }
+    @include breakpoint('tabletLarge'){
+        grid-template-columns: repeat(3, minmax(236px, 400px));
+    }
+    @include breakpoint('desktop'){
+        grid-template-columns: repeat(4, minmax(236px, 400px));
+    }
+    @include breakpoint('desktopLarge'){
+        grid-template-columns: repeat(5, minmax(236px, 400px));
+    }
+    &.empty {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        grid-template-columns: 236px;
+    }
+    &__warning {
+        color: $white;
+        text-align: center;
+        margin-top:13px;
+    }
+    .note {
+        width: 100%;
+        border-radius: 14px;
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+        &--addnote {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $black;
+            background-image: linear-gradient(
+                    to right,
+                    $white 50%,
+                    transparent 50%
+                ),
+                linear-gradient(to right, $white 50%, transparent 50%),
+                linear-gradient(to bottom, $white 50%, transparent 50%),
+                linear-gradient(to bottom, $white 50%, transparent 50%);
+            background-position: left top, left bottom, left top, right top;
+            background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+            background-size: 15px 1px, 15px 1px, 1px 15px, 1px 15px;
+        }
+        &__card {
+            padding: 23px;
+            box-sizing: border-box;
+        }
+        &__content {
+            position: absolute;
+            width: calc(100% - 46px);
+            height: calc(100% - 46px);
+            display: flex;
+            flex-direction: column;
+        }
+        &__text {
+            &--title {
+                max-width: calc(100% - 39px);
+            }
+            &--subtitle {
+                max-width: calc(100% - 39px);
+                flex: 1;
+            }
+        }
+        &__actions {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 4px;
+            right: 0;
+            opacity: 0;
+        }
+        &:hover {
+            .note__actions {
+                transition: 0.25s ease-in-out;
+                opacity: 1;
+            }
+        }
+    }
+}

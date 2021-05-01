@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Mont";
+    src: url("/fonts/Mont-Light.woff2") format("woff2"),
+        url("/fonts/Mont-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mont";
+    src: url("/fonts/Mont-SemiBold.woff2") format("woff2"),
+        url("/fonts/Mont-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mont";
+    src: url("/fonts/Mont-Regular.woff2") format("woff2"),
+        url("/fonts/Mont-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+button,
+textarea {
+    color: $black;
+    font-family: "Mont";
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 41px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+label,
+.btn {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.warning{
+    size: 18px;
+    line-height: 23px;
+    color: $white;
+}
+
+input {
+    margin-bottom: 18px;
+    padding: 15px 16px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 25px;;
+}
+
+::-webkit-input-placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: $grey-3;
+}
+::-moz-placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: $grey-3;
+}

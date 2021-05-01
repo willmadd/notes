@@ -1,0 +1,10 @@
+@import "../../../sass/variables.scss";
+
+.homepage {
+    background-color: $black-2;
+    height:100%;
+    padding:41px 90px;
+    h1 {
+        color: $white;
+    }
+}

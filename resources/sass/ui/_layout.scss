@@ -1,0 +1,12 @@
+body, html, #root, .container{
+    margin:0;
+    height:100%;
+}
+
+input, button, submit { 
+    border:none; 
+    &:focus{
+        outline: none;
+    }
+
+} 

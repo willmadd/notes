@@ -1,0 +1,36 @@
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-top:5px;
+    width:100%;
+    border: 1px solid $black;
+}
+
+textarea{
+    border: 1px solid $black;
+}
+
+.btn{
+    min-width:159px;
+    min-height: 45px;
+    border-radius: 7px;
+    cursor: pointer;
+    &--primary{
+        background-color: $black;
+        color: $white;
+    }
+    &--secondary{
+        background-color: inherit;
+        color: $black;
+        border: 1px solid $black;
+    }
+    &--action{
+        background-color: inherit;
+        padding:0;
+        min-width:auto;
+        min-height:auto;
+    }
+}
