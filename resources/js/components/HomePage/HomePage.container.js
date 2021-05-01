@@ -4,7 +4,7 @@ import { getNotes } from '../../store/notes/notes.actions';
 
 const mapStateToProps = _state => {
     return {
-        locale:"no"
+        locale:_state.localeReducer.locale
     };
 };
 

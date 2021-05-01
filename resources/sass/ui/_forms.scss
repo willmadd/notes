@@ -18,6 +18,7 @@ textarea{
     min-height: 45px;
     border-radius: 7px;
     cursor: pointer;
+    background-color: inherit;
     &--primary{
         background-color: $black;
         color: $white;

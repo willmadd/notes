@@ -10,7 +10,6 @@ import routeMap from "../../routes/routeMap";
 
 const NoteView = ({ match, location }) => {
 
-console.log('NOTE VIERW VOTE VIEW');
 
     let history = useHistory();
 

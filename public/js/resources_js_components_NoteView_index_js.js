@@ -83,7 +83,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var NoteView = function NoteView(_ref) {
   var match = _ref.match,
       location = _ref.location;
-  console.log('NOTE VIERW VOTE VIEW');
   var history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_9__.useHistory)();
   var id = match.params.id;
 

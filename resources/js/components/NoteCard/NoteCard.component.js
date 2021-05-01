@@ -7,7 +7,7 @@ import { preloadRouteComponent } from "../../routes/lazyLoad";
 
 
 const NoteCard = ({ note, locale, getNotes }) => {
-    console.log('GGHGHG');
+
     const location = useLocation();
 
     const history = useHistory();
