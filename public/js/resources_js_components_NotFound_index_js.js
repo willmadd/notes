@@ -21,7 +21,7 @@ var NotFound = function NotFound(_ref) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     className: "notfound",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-      src: '/images/not-found.icon.svg',
+      src: "/images/not-found.icon.svg",
       alt: "not found icon"
     })
   });

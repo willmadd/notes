@@ -1,10 +1,10 @@
-import React from 'react';
-import './SiteLoading.styles.scss';
+import React from "react";
+import "./SiteLoading.styles.scss";
 
 const SiteLoading = () => {
     return (
         <div className="siteloading">
-            <img src="/images/6bwhite.svg"/>
+            <img src="/images/6bwhite.svg" />
         </div>
     );
 };

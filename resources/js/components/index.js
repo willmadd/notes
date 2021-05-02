@@ -8,23 +8,17 @@ import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import SiteLoading from "./SiteLoading";
 
-
-const store = createStore(
-    rootReducer,
-    compose(
-        applyMiddleware(thunk),
-    )
-);
+const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
 
 if (document.getElementById("root")) {
     ReactDOM.render(
         <React.StrictMode>
             <React.Suspense fallback={<SiteLoading />}>
-                    <Provider store={store}>
-                        <Router>
-                            <App />
-                        </Router>
-                    </Provider>
+                <Provider store={store}>
+                    <Router>
+                        <App />
+                    </Router>
+                </Provider>
             </React.Suspense>
         </React.StrictMode>,
         document.getElementById("root")

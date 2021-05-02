@@ -610,7 +610,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@-webkit-keyframes rotation {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(359deg);\n  }\n}\n@keyframes rotation {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(359deg);\n  }\n}\n.homepage {\n  background-color: #1C1C1C;\n  height: 100%;\n  padding: 41px 90px;\n}\n.homepage h1 {\n  color: #ffffff;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@-webkit-keyframes rotation {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(359deg);\n  }\n}\n@keyframes rotation {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(359deg);\n  }\n}\n.homepage {\n  background-color: #1C1C1C;\n  min-height: 100%;\n  padding: 41px 30px;\n}\n@media (min-width: 768px) {\n  .homepage {\n    padding: 41px 90px;\n  }\n}\n.homepage h1 {\n  color: #ffffff;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

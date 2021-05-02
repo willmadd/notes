@@ -3,7 +3,7 @@ import localeList from "../../translations/locales";
 import "./LocationModal.styles.scss";
 import translationsHOC from "../Translations";
 import PropTypes from "prop-types";
-import { defaultLocale } from '../../settings';
+import { defaultLocale } from "../../settings";
 
 const LocationModal = ({ locale, setLocale, __, setFirstVisit }) => {
     const handleLanguageSelect = (icu) => {
@@ -50,6 +50,5 @@ LocationModal.propTypes = {
     __: PropTypes.func.isRequired,
     setFirstVisit: PropTypes.func.isRequired,
 };
-
 
 export default translationsHOC(LocationModal);

@@ -2,8 +2,11 @@
 
 .homepage {
     background-color: $black-2;
-    height:100%;
-    padding:41px 90px;
+    min-height: 100%;
+    padding: 41px 30px;
+    @include breakpoint("tablet") {
+        padding: 41px 90px;
+    }
     h1 {
         color: $white;
     }

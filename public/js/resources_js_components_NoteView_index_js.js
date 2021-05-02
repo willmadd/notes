@@ -119,7 +119,7 @@ var NoteView = function NoteView(_ref) {
       }
     })["catch"](function (e) {
       setError(e.message);
-      history.push('/notfound');
+      history.push("/notfound");
     });
   }, []);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {

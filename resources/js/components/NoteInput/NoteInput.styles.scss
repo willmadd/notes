@@ -10,82 +10,81 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &__buttons{
+    &__buttons {
         margin-top: 24px;
         display: flex;
         justify-content: flex-end;
-        .btn{
+        .btn {
             margin-left: 8px;
         }
     }
-    &__close{
+    &__close {
         position: absolute;
         top: 44px;
-        right:56px;
+        right: 56px;
         background-color: inherit;
         cursor: pointer;
     }
-    &__modal{
-        position:relative;
-        padding:41px 54px 77px 41px;
-        width:736px;
+    &__modal {
+        position: relative;
+        padding: 41px 54px 77px 41px;
+        width: 736px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
         min-height: 437px;
-        h1{
-            margin-bottom:13px;
+        h1 {
+            margin-bottom: 13px;
         }
     }
-    .mde{
-        &-preview{
+    .mde {
+        &-preview {
             background-color: $white;
         }
-        &-header{
+        &-header {
             border-bottom: 1px solid $black;
-            border-radius: 7px 7px 0 0; 
+            border-radius: 7px 7px 0 0;
         }
-        &-text{
+        &-text {
             border-radius: 0 0 7px 7px;
         }
     }
-    .react-mde{
+    .react-mde {
         border: 1px solid $black;
-        border-radius:7px;
-        margin-top:5px;
+        border-radius: 7px;
+        margin-top: 5px;
     }
 
-    &-view{
+    &-view {
         .loading {
             animation: rotation 2s infinite linear;
-            height:36px;
+            height: 36px;
             width: auto;
         }
-        .mde-header{
+        .mde-header {
             display: none;
         }
-        .mde-preview{
+        .mde-preview {
             background-color: inherit;
-            .mde-preview-content{
-                padding:0;
+            .mde-preview-content {
+                padding: 0;
             }
         }
-        .mde-text{
+        .mde-text {
             display: none;
         }
-        .react-mde{
-            padding:0;
-            border:0;
-            margin-top:13px;
+        .react-mde {
+            padding: 0;
+            border: 0;
+            margin-top: 13px;
         }
-        .btn{
+        .btn {
             max-width: 159px;
             align-self: flex-end;
         }
-        img{
-            width:100%;
+        img {
+            width: 100%;
         }
-
     }
 }

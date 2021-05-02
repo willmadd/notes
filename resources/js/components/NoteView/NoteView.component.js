@@ -9,13 +9,11 @@ import PropTypes from "prop-types";
 import routeMap from "../../routes/routeMap";
 
 const NoteView = ({ match, location }) => {
-
-
     let history = useHistory();
 
     const { id } = match.params;
 
-    const { colour } = ((location||{}).state||{});
+    const { colour } = (location || {}).state || {};
 
     const [error, setError] = useState("");
 
@@ -40,7 +38,7 @@ const NoteView = ({ match, location }) => {
             })
             .catch((e) => {
                 setError(e.message);
-                history.push('/notfound');
+                history.push("/notfound");
             });
     }, []);
 

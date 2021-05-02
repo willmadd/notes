@@ -1,10 +1,10 @@
 import { connect } from "react-redux";
 import NoteArea from "./NoteArea.component";
-import { getNotes } from '../../store/notes/notes.actions';
+import { getNotes } from "../../store/notes/notes.actions";
 
-const mapStateToProps = _state => {
+const mapStateToProps = (_state) => {
     return {
-        notes:_state.notesReducer.notes,
+        notes: _state.notesReducer.notes,
         loading: _state.notesReducer.loading,
     };
 };

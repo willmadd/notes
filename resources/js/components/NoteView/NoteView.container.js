@@ -1,20 +1,21 @@
 import { connect } from "react-redux";
 import NoteView from "./NoteView.component";
-import { getNotes } from '../../store/notes/notes.actions';
+import { getNotes } from "../../store/notes/notes.actions";
 
-const mapStateToProps = ({localeReducer, notesReducer}) => {
-    const locale = {localeReducer};
+const mapStateToProps = ({ localeReducer, notesReducer }) => {
+    const locale = { localeReducer };
     return {
         locale,
-        lastNoteCol:(notesReducer.notes[notesReducer.notes.length-1]||{}).colour
+        lastNoteCol: (notesReducer.notes[notesReducer.notes.length - 1] || {})
+            .colour,
     };
 };
 
-const mapDispatchToProps = _dispatch => {
+const mapDispatchToProps = (_dispatch) => {
     return {
-        getNotes:()=>{
-            _dispatch(getNotes())
-        }
+        getNotes: () => {
+            _dispatch(getNotes());
+        },
     };
 };
 

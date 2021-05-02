@@ -5,16 +5,16 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(236px, 700px));
     grid-gap: 20px;
-    @include breakpoint('tablet'){
+    @include breakpoint("tablet") {
         grid-template-columns: repeat(2, minmax(236px, 400px));
     }
-    @include breakpoint('tabletLarge'){
+    @include breakpoint("tabletLarge") {
         grid-template-columns: repeat(3, minmax(236px, 400px));
     }
-    @include breakpoint('desktop'){
+    @include breakpoint("desktop") {
         grid-template-columns: repeat(4, minmax(236px, 400px));
     }
-    @include breakpoint('desktopLarge'){
+    @include breakpoint("desktopLarge") {
         grid-template-columns: repeat(5, minmax(236px, 400px));
     }
     &.empty {
@@ -27,7 +27,7 @@
     &__warning {
         color: $white;
         text-align: center;
-        margin-top:13px;
+        margin-top: 13px;
     }
     .note {
         width: 100%;

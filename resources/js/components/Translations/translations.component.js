@@ -4,7 +4,7 @@ import React from "react";
 const translationHOC = (OriginalReactComponent) => {
     class TranslationsWrapper extends React.Component {
         render() {
-            const {locale} = this.props;
+            const { locale } = this.props;
             const __ = (translation) => {
                 let translationsFile = findTranslationsFile(locale);
                 if (translationsFile) {
@@ -24,13 +24,12 @@ const translationHOC = (OriginalReactComponent) => {
         }
     }
 
-const mapStateToProps = ({localeReducer}) => {
-    const {locale} = localeReducer;
-    return {locale};
-};
+    const mapStateToProps = ({ localeReducer }) => {
+        const { locale } = localeReducer;
+        return { locale };
+    };
 
-return connect(mapStateToProps)(TranslationsWrapper);
-
+    return connect(mapStateToProps)(TranslationsWrapper);
 };
 
 export default translationHOC;
