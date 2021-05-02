@@ -20,14 +20,14 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="6B Notes App">
         <meta property="og:description" content="A Note Taking App">
-        <meta property="og:image" content="http://notes.williammaddicott.com/images/6b.svg">
+        <meta property="og:image" content="/images/6b.jpg">
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
         <meta property="twitter:domain" content="notes.williammaddicott.com">
         <meta property="twitter:url" content="http://notes.williammaddicott.com">
         <meta name="twitter:title" content="6B Notes App">
         <meta name="twitter:description" content="A Note Taking App">
-        <meta name="twitter:image" content="http://notes.williammaddicott.com/images/6b.svg">
+        <meta name="twitter:image" content="/images/6b.jpg">
     </head>
     <body>
         <div id="root">
