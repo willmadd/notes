@@ -5,9 +5,7 @@ import { Link, useLocation, useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
 import { preloadRouteComponent } from "../../routes/lazyLoad";
 
-
 const NoteCard = ({ note, locale, getNotes }) => {
-
     const location = useLocation();
 
     const history = useHistory();
@@ -24,10 +22,13 @@ const NoteCard = ({ note, locale, getNotes }) => {
         e.stopPropagation();
         e.preventDefault();
         const { name } = e.target;
-        history.push({pathname:`/edit/${name}`, state: {
-            overlay: location,
-            colour,
-        }})
+        history.push({
+            pathname: `/edit/${name}`,
+            state: {
+                overlay: location,
+                colour,
+            },
+        });
     };
 
     const handleDeleteNote = (e) => {
@@ -55,7 +56,7 @@ const NoteCard = ({ note, locale, getNotes }) => {
                     colour,
                 },
             }}
-            onMouseEnter={()=>preloadRouteComponent(`/note/${id}`)}
+            onMouseEnter={() => preloadRouteComponent(`/note/${id}`)}
             className="note note__card"
             style={{ backgroundColor: colour }}
         >
@@ -68,7 +69,13 @@ const NoteCard = ({ note, locale, getNotes }) => {
                         onMouseEnter={() => setDisableLink(true)}
                         onMouseLeave={() => setDisableLink(false)}
                     >
-                        <img src="/images/edit.icon.svg" alt="edit note" name={id}/>
+                        <img
+                            src="/images/edit.icon.svg"
+                            alt="edit note"
+                            height="19"
+                            width="19"
+                            name={id}
+                        />
                     </button>
                     <button
                         type="button"
@@ -81,15 +88,15 @@ const NoteCard = ({ note, locale, getNotes }) => {
                             src="/images/delete.icon.svg"
                             name={id}
                             alt="edit note"
+                            height="39"
+                            width="39"
                         />
                     </button>
                 </div>
 
                 <h2 className={"note__text--title"}>{title}</h2>
                 <h3 className={"note__text--subtitle"}>{subtitle}</h3>
-                <p>
-                    {edited.toLocaleDateString(locale, dateFormat)}
-                </p>
+                <p>{edited.toLocaleDateString(locale, dateFormat)}</p>
                 {error && <p>{error}</p>}
             </div>
         </Link>
@@ -97,10 +104,9 @@ const NoteCard = ({ note, locale, getNotes }) => {
 };
 
 NoteCard.propTypes = {
-    note:PropTypes.object.isRequired,
-    locale:PropTypes.string.isRequired,
-    getNotes:PropTypes.func.isRequired,
-}
-
+    note: PropTypes.object.isRequired,
+    locale: PropTypes.string.isRequired,
+    getNotes: PropTypes.func.isRequired,
+};
 
 export default NoteCard;

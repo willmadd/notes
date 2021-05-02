@@ -74,8 +74,11 @@ var AddNote = function AddNote() {
         }
       },
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+        loading: "lazy",
         src: "/images/plus.icon.svg",
-        alt: "plus icon"
+        alt: "plus icon",
+        height: "38",
+        width: "38"
       })
     })
   });
@@ -430,6 +433,8 @@ var NoteCard = function NoteCard(_ref) {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
             src: "/images/edit.icon.svg",
             alt: "edit note",
+            height: "19",
+            width: "19",
             name: id
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
@@ -447,7 +452,9 @@ var NoteCard = function NoteCard(_ref) {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
             src: "/images/delete.icon.svg",
             name: id,
-            alt: "edit note"
+            alt: "edit note",
+            height: "39",
+            width: "39"
           })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h2", {
@@ -523,27 +530,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _NoteCard_container__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NoteCard.container */ "./resources/js/components/NoteCard/NoteCard.container.js");
 
-
-/***/ }),
-
-/***/ "./resources/js/settings.js":
-/*!**********************************!*\
-  !*** ./resources/js/settings.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "dateFormat": () => (/* binding */ dateFormat),
-/* harmony export */   "noteCols": () => (/* binding */ noteCols)
-/* harmony export */ });
-var dateFormat = {
-  day: "numeric",
-  year: "numeric",
-  month: "short"
-};
-var noteCols = ['#FFC7F9', '#F7FFC7', '#C7FFF5', '#FFC7C7', '#C7D3FF'];
 
 /***/ }),
 

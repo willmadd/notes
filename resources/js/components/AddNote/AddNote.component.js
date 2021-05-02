@@ -19,7 +19,13 @@ const AddNote = () => {
                     },
                 }}
             >
-                <img src={"/images/plus.icon.svg"} alt="plus icon" />
+                <img
+                    loading="lazy"
+                    src={"/images/plus.icon.svg"}
+                    alt="plus icon"
+                    height="38"
+                    width="38"
+                />
             </Link>
         </>
     );

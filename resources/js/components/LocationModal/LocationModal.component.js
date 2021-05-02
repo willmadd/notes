@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import localeList from "../../translations/locales";
 import "./LocationModal.styles.scss";
 import translationsHOC from "../Translations";
 import PropTypes from "prop-types";
+import { defaultLocale } from '../../settings';
 
 const LocationModal = ({ locale, setLocale, __, setFirstVisit }) => {
     const handleLanguageSelect = (icu) => {
@@ -23,7 +24,7 @@ const LocationModal = ({ locale, setLocale, __, setFirstVisit }) => {
                             onClick={() => handleLanguageSelect(icu)}
                             className="btn"
                             onMouseEnter={() => setLocale(icu)}
-                            onMouseLeave={() => setLocale("en-GB")}
+                            onMouseLeave={() => setLocale(defaultLocale)}
                         >
                             <img
                                 key={icu}
@@ -32,6 +33,8 @@ const LocationModal = ({ locale, setLocale, __, setFirstVisit }) => {
                                 className={`${
                                     locale === icu ? "active" : "inactive"
                                 }`}
+                                height="147"
+                                width="147"
                             />
                         </button>
                     ))}

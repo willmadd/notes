@@ -22,8 +22,8 @@
         DB_USERNAME=root
         DB_PASSWORD=root
 
-    run `php artisan key:generate` followed by `php artisan serve`
+    run `php artisan key:generate` followed by `php artisan migrate` to create the database tables 
     ####
-    finally run `php artisan migrate` to create the database tables
+    finally run `php artisan serve` to start the laravel server. The project should then be viewable at `http://127.0.0.1:8000/`
     ####
     You should now see a the 'Notes' App. If you just see a spinning 6b it's probably because your database credentials are incorrect!

@@ -11,7 +11,7 @@ const Header = ({ setLocale, locale }) => {
 
     return (
         <header className="header">
-            <img src={"/images/6b.svg"} alt="6b logo" />
+            <img src={"/images/6b.svg"} alt="6b logo" width="32" height="24" />
             <div className="header__translate">
                 {locales.map(({ name, img, icu }) => (
                     <img
@@ -20,6 +20,8 @@ const Header = ({ setLocale, locale }) => {
                         alt={`${name} ${locale} flag`}
                         onClick={() => handleLocaleSelect(icu)}
                         className={`${locale === icu ? "active" : "inactive"}`}
+                        width="24"
+                        height="24"
                     />
                 ))}
             </div>

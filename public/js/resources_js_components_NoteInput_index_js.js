@@ -332,27 +332,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/settings.js":
-/*!**********************************!*\
-  !*** ./resources/js/settings.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "dateFormat": () => (/* binding */ dateFormat),
-/* harmony export */   "noteCols": () => (/* binding */ noteCols)
-/* harmony export */ });
-var dateFormat = {
-  day: "numeric",
-  year: "numeric",
-  month: "short"
-};
-var noteCols = ['#FFC7F9', '#F7FFC7', '#C7FFF5', '#FFC7C7', '#C7D3FF'];
-
-/***/ }),
-
 /***/ "./resources/js/store/notes/notes.actions.js":
 /*!***************************************************!*\
   !*** ./resources/js/store/notes/notes.actions.js ***!
